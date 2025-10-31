@@ -43,7 +43,8 @@ class fifo_base_test extends uvm_test;
         seq = fifo_sequence::type_id::create("seq");
         seq.start(env.fifo_in_agent.sequencer);
         // Wait for sequence to complete
-        #5000;
+        //#5000;
+
         `uvm_info("TEST", $sformatf("Main phase completed"), UVM_MEDIUM)
         phase.drop_objection(this);
     endtask

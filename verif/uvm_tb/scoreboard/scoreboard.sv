@@ -23,7 +23,8 @@ class scoreboard extends uvm_scoreboard;
         mon_port = new("monitor", this);
         data_event = uvm_event_pool::get_global("scoreboard in event");
         // getting common configuration
-        uvm_config_db #(common_config)::get(this, "*", "cfg", cfg);
+        if(!uvm_config_db #(common_config)::get(this, "*", "com_cfg", cfg))
+            `uvm_error("SCOREBOARD", "Failed to get common_config")
     endfunction
 
     //============ write function to push expected data ============//

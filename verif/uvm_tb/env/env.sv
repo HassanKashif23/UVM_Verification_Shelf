@@ -24,7 +24,8 @@ class fifo_env extends uvm_env;
         fifo_in_agent = in_agent::type_id::create("fifo_in_agent", this);
         fifo_scoreboard = scoreboard::type_id::create("fifo_scoreboard", this);
         scb_event = uvm_event_pool::get_global("scb_event");
-        uvm_config_db#(common_config)::get(this, "*", "com_cfg", com_cfg);
+        if(!uvm_config_db#(common_config)::get(this, "*", "com_cfg", com_cfg))
+            `uvm_error("ENV", "Failed to get common_config")
     endfunction
 
     // Connect phase

@@ -8,38 +8,44 @@ class fifo_config extends uvm_component;
         super.new(name,parent);
     endfunction 
 
-    int config_1;
-    int config_2;
-    int wr_data;
-    int wr_en;
-    int rd_en;
-    bit random;
+    // ACTUAL FIFO PARAMETERS YOU NEED:
+    int depth = 8;           // Depth of your FIFO
+    int width = 8;           // Width of data bus  
+    int max_wr_delay = 5;         // Max delay between writes
+    int max_rd_delay = 5;         // Max delay between reads
+    bit random_data = 0;      // 1=random data, 0=sequential
 
     function void build_phase(uvm_phase phase);
         post_randomize();
     endfunction
 
     `uvm_component_utils_begin(fifo_config)
-    `uvm_field_int(config_1  ,  UVM_DEC)
-    `uvm_field_int(config_2  ,  UVM_DEC)
+    `uvm_field_int(depth  ,  UVM_DEC)
+    `uvm_field_int(width  ,  UVM_DEC)
+    `uvm_field_int(max_wr_delay    , UVM_DEC)
+    `uvm_field_int(max_rd_delay    , UVM_DEC)
+    `uvm_field_int(random_data , UVM_DEC)
     `uvm_component_utils_end  
 
     function void post_randomize();
         string arg_value;
 
-        if(clp.get_arg_value("+config_1=", arg_value))
-            config_1 = arg_value.atoi();
-        if(clp.get_arg_value("+config_2=",arg_value))
-            config_2 = arg_value.atoi();
-        if(clp.get_arg_value("+data = ", arg_value))
-            wr_data = arg_value.atoi();
-        if(clp.get_arg_value("+wr_en = ", arg_value))
-            wr_en = arg_value.atoi();
-        if(clp.get_arg_value("+rd_en = ", arg_value))
-            rd_en = arg_value.atoi();
-        // Random values for length, width and height
-        if (clp.get_arg_value("+random", arg_value)) 
-            random = 'b1;
+        // GET ACTUAL FIFO PARAMETERS FROM COMMAND LINE:
+        if(clp.get_arg_value("+depth=", arg_value))
+            depth = arg_value.atoi();
+        if(clp.get_arg_value("+width=", arg_value))
+            width = arg_value.atoi();
+        if(clp.get_arg_value("+max_wr_delay=", arg_value))
+            max_wr_delay = arg_value.atoi();
+        if(clp.get_arg_value("+max_rd_delay=", arg_value))
+            max_rd_delay = arg_value.atoi();
+        if(clp.get_arg_value("+random_data=", arg_value))
+            random_data = arg_value.atoi();
+
+            `uvm_info("FIFO_CONFIG", $sformatf(
+            "Config: depth=%0d, width=%0d, random=%0d",
+            depth, width, random_data), UVM_MEDIUM)
+
     endfunction
 
 
