@@ -1,0 +1,149 @@
+# vsim -c -sv_lib /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/uvm-1.2/lib/uvm_dpi -do "run -all; quit" fifo_tb "+UVM_TESTNAME=simple_test" -l simple_test.log 
+# Start time: 18:57:43 on Oct 31,2025
+# Loading /tmp/hassan-ul-haq@Hassanulhaq_dpi_10634/linuxaloem_gcc-7.4.0/export_tramp.so
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading sv_std.std
+# Loading work.fifo_intf
+# Loading work.uvm_pkg
+# Loading work.fifo_pkg
+# Loading work.fifo_tb
+# Loading work.fifo
+# Compiling /tmp/hassan-ul-haq@Hassanulhaq_dpi_10634/linuxaloem_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/hassan-ul-haq@Hassanulhaq_dpi_10634/linuxaloem_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/uvm-1.2/lib/uvm_dpi.so
+# ** Warning: Design size of 55052 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# run -all
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test simple_test...
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../config/fifo_config.sv(45) @ 0: uvm_test_top.fifo_config [FIFO_CONFIG] Config: depth=8, width=8, random=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../fifo_base_test.sv(55) @ 0: uvm_test_top [TEST] Starting reset phase
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../fifo_base_test.sv(58) @ 0: uvm_test_top [TEST] Reset phase completed
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../fifo_base_test.sv(39) @ 995: uvm_test_top [TEST] Starting main phase
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../env/env.sv(41) @ 995: uvm_test_top.env [ENV] Environment main phase started
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../env/env.sv(55) @ 995: uvm_test_top.env [ENV] Environment main phase ended
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(25) @ 995: uvm_test_top.env.fifo_in_agent.sequencer@@seq [SEQ_PRE_START] Got num_items=20 from com_cfg
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(31) @ 995: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Generating fifo items 20
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(48) @ 995: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Sending fifo item 0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1005: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=1, rd_en=0, data=0xa0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(43) @ 1005: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured WRITE: data=0xa0, full=0, empty=1
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(36) @ 1005: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Stored: data=0xa0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(48) @ 1009: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Sending fifo item 1
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1015: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=1, rd_en=0, data=0xa1
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(43) @ 1015: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured WRITE: data=0xa1, full=0, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(36) @ 1015: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Stored: data=0xa1
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(48) @ 1017: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Sending fifo item 2
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1025: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=1, rd_en=0, data=0xa2
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(43) @ 1025: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured WRITE: data=0xa2, full=0, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(36) @ 1025: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Stored: data=0xa2
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(48) @ 1029: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Sending fifo item 3
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1035: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=1, rd_en=0, data=0xa3
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(43) @ 1035: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured WRITE: data=0xa3, full=0, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(36) @ 1035: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Stored: data=0xa3
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(48) @ 1039: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Sending fifo item 4
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1045: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=1, rd_en=0, data=0xa4
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(43) @ 1045: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured WRITE: data=0xa4, full=0, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(36) @ 1045: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Stored: data=0xa4
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(48) @ 1048: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Sending fifo item 5
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1055: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=1, rd_en=0, data=0xa5
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(43) @ 1055: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured WRITE: data=0xa5, full=0, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(36) @ 1055: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Stored: data=0xa5
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(48) @ 1056: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Sending fifo item 6
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1065: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=1, rd_en=0, data=0xa6
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(43) @ 1065: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured WRITE: data=0xa6, full=0, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(36) @ 1065: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Stored: data=0xa6
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(48) @ 1066: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Sending fifo item 7
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1075: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=1, rd_en=0, data=0xa7
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(43) @ 1075: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured WRITE: data=0xa7, full=0, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(36) @ 1075: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Stored: data=0xa7
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(48) @ 1080: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Sending fifo item 8
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1085: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=1, rd_en=0, data=0xa8
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(48) @ 1088: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Sending fifo item 9
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1095: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=1, rd_en=0, data=0xa9
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(62) @ 1129: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Read 0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1135: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=0, rd_en=1, data=0x0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(53) @ 1135: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured READ: data=0xa0, full=1, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(42) @ 1135: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Pass: Read 0xa0, Expected 0xa0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(62) @ 1137: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Read 1
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1145: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=0, rd_en=1, data=0x0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(53) @ 1145: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured READ: data=0xa1, full=0, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(42) @ 1145: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Pass: Read 0xa1, Expected 0xa1
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(62) @ 1147: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Read 2
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1155: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=0, rd_en=1, data=0x0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(53) @ 1155: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured READ: data=0xa2, full=0, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(42) @ 1155: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Pass: Read 0xa2, Expected 0xa2
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(62) @ 1156: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Read 3
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1165: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=0, rd_en=1, data=0x0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(53) @ 1165: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured READ: data=0xa3, full=0, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(42) @ 1165: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Pass: Read 0xa3, Expected 0xa3
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(62) @ 1166: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Read 4
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1175: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=0, rd_en=1, data=0x0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(53) @ 1175: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured READ: data=0xa4, full=0, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(42) @ 1175: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Pass: Read 0xa4, Expected 0xa4
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(62) @ 1178: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Read 5
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1185: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=0, rd_en=1, data=0x0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(53) @ 1185: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured READ: data=0xa5, full=0, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(42) @ 1185: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Pass: Read 0xa5, Expected 0xa5
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(62) @ 1188: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Read 6
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1195: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=0, rd_en=1, data=0x0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(53) @ 1195: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured READ: data=0xa6, full=0, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(42) @ 1195: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Pass: Read 0xa6, Expected 0xa6
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(62) @ 1200: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Read 7
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1205: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=0, rd_en=1, data=0x0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_monitor.sv(53) @ 1205: uvm_test_top.env.fifo_in_agent.monitor [MONITOR] Captured READ: data=0xa7, full=0, empty=0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(42) @ 1205: uvm_test_top.env.fifo_scoreboard [SCOREBOARD] Pass: Read 0xa7, Expected 0xa7
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(62) @ 1206: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Read 8
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1215: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=0, rd_en=1, data=0x0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(62) @ 1216: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence]  Read 9
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../agent/in_driver.sv(38) @ 1225: uvm_test_top.env.fifo_in_agent.driver [DRIVER] Driven: wr_en=0, rd_en=1, data=0x0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../sequence/fifo_sequence.sv(68) @ 1228: uvm_test_top.env.fifo_in_agent.sequencer@@seq [fifo_sequence] FIFO Sequence of 10 items Completed
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../fifo_base_test.sv(48) @ 1228: uvm_test_top [TEST] Main phase completed
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/verif/uvm_tb/interface/../scoreboard/scoreboard.sv(62) @ 1228: uvm_test_top.env.fifo_scoreboard [SCOREBOARD INFO] Total Matches: 8, Mismatches: 0
+# UVM_INFO /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/uvm-1.2/src/base/uvm_report_server.svh(847) @ 1228: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   85
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DRIVER]    20
+# [ENV]     2
+# [FIFO_CONFIG]     1
+# [MONITOR]    16
+# [RNTST]     1
+# [SCOREBOARD]    16
+# [SCOREBOARD INFO]     1
+# [SEQ_PRE_START]     1
+# [TEST]     4
+# [UVM/RELNOTES]     1
+# [fifo_sequence]    22
+# 
+# ** Note: $finish    : /home/hassan-ul-haq/UVM/UVM_Verification_Shelf/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 1228 ps  Iteration: 125  Instance: /fifo_tb
+# End time: 18:57:44 on Oct 31,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

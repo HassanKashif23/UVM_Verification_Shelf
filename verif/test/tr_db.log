@@ -1,0 +1,11 @@
+  CREATE_STREAM @995 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.fifo_in_agent.sequencer STREAM:662}
+  CREATE_STREAM @995 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.fifo_in_agent.sequencer STREAM:662}
+  CREATE_STREAM @995 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.fifo_in_agent.sequencer STREAM:662}
+  CREATE_STREAM @995 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.fifo_in_agent.sequencer STREAM:662}
+  CREATE_STREAM @995 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.fifo_in_agent.sequencer STREAM:662}
+  CREATE_STREAM @995 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.fifo_in_agent.sequencer STREAM:662}
+  CREATE_STREAM @995 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.fifo_in_agent.sequencer STREAM:662}
+  CREATE_STREAM @995 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.fifo_in_agent.sequencer STREAM:662}
+  CREATE_STREAM @995 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.fifo_in_agent.sequencer STREAM:662}
+  CREATE_STREAM @995 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.fifo_in_agent.sequencer STREAM:662}
+  CREATE_STREAM @995 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.fifo_in_agent.sequencer STREAM:662}
